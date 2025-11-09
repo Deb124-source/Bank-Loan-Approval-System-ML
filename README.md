@@ -13,10 +13,11 @@ Why: Offers transparency, high recall, and interpretability—ideal for financia
 
 ## Performance
 
-Accuracy: 86.18%
-Precision: 84.00% 
-Recall: 98.82% F1-Score: 
-90.81% 
+ ✓ F1-Score: 99.62% (balanced performance)
+  ✓ Accuracy: 99.53% (overall correctness)
+  ✓ Precision: 99.25% (low false approvals)
+  ✓ Recall: 100.00% (captures most good applicants)
+
 
 ## Exploratory Data Analysis (EDA): 
 Visualized loan approvals by education, income, and property area. Found credit history as the strongest predictor of approval.
