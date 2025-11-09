@@ -9,6 +9,7 @@ To build a predictive model that classifies loan applications as Approved (Y) or
 ## Model Description
 
 Algorithm Used: Logistic Regression 
+
 Why: Offers transparency, high recall, and interpretability—ideal for financial decision systems.
 
 ## Performance
