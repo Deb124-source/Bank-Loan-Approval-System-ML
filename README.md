@@ -1,4 +1,4 @@
-## Bank-Loan-Approval-ML
+## Bank-Loan-Approval-System-ML
 
 This project predicts whether a bank loan will be approved or not using a Machine Learning model trained on customer demographic and financial details. It helps banks automate loan screening, saving time and improving consistency in decision-making.
 
