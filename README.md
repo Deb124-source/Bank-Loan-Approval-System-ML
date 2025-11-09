@@ -1,161 +1,38 @@
-# 🏦 Bank Loan Approval System
+Bank-Loan-Approval-ML
+This project predicts whether a bank loan will be approved or not using a Machine Learning model trained on customer demographic and financial details. It helps banks automate loan screening, saving time and improving consistency in decision-making.
 
-## 📘 Overview
-The **Bank Loan Approval System** is a machine learning project that predicts whether a loan application should be **approved or rejected** based on customer details such as income, credit history, and loan amount.  
-It uses multiple classification algorithms to evaluate performance and determine the most accurate model.
+Objective
 
----
+To build a predictive model that classifies loan applications as Approved (Y) or Rejected (N) based on features like income, education, credit history, and employment.
 
-## 🎯 Objectives
-- Analyze bank loan applicant data.  
-- Preprocess missing and categorical values.  
-- Split the data into training and testing sets.  
-- Train and compare multiple ML models.  
-- Evaluate model performance using accuracy and approval rate.  
+Model Description
 
----
+Algorithm Used: Logistic Regression Why: Offers transparency, high recall, and interpretability—ideal for financial decision systems.
 
-## 🧠 Machine Learning Models Used
-The notebook initializes and evaluates several algorithms:
-- **Logistic Regression**  
-- **Decision Tree Classifier**  
-- **Random Forest Classifier**  
-- **K-Nearest Neighbors (KNN)**  
+Performance
 
-Each model is trained and tested using an **80-20 data split**, ensuring balanced class distribution through stratified sampling.
+Accuracy: 86.18% Precision: 84.00% Recall: 98.82% F1-Score: 90.81% Exploratory Data Analysis (EDA): Visualized loan approvals by education, income, and property area. Found credit history as the strongest predictor of approval.
 
----
+Data Preprocessing
 
-## ⚙️ Key Steps
-1. **Data Loading:** Import dataset into a pandas DataFrame.  
-2. **Exploratory Data Analysis (EDA):** Understand data distribution and relationships.  
-3. **Data Cleaning:** Handle missing values and outliers.  
-4. **Feature Encoding & Scaling:** Convert categorical values and normalize data.  
-5. **Data Splitting:** Train-test split using `train_test_split()` with `stratify=y`.  
-6. **Model Training:** Fit models to the training data.  
-7. **Evaluation:** Compare models using accuracy, precision, recall, and F1-score.  
+Handled missing values and encoded categorical features. Created new engineered features: Total_Income, Income_to_Loan_Ratio.
 
----
+Model Training & Evaluation
 
-## 🧾 Example Code Snippet
-```python
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42, stratify=y
-)
+Trained multiple models and selected Logistic Regression for best F1-score.
 
-models = {
-    'Logistic Regression': LogisticRegression(random_state=42, max_iter=1000),
-    'Decision Tree': DecisionTreeClassifier(random_state=42, max_depth=5),
-    'Random Forest': RandomForestClassifier(random_state=42, n_estimators=100),
-    'K-Nearest Neighbors': KNeighborsClassifier(n_neighbors=5)
-}
+Prediction:
 
- ## 📊Evaluation Metrices
+The model predicts “Y” (approved) or “N” (rejected) for new loan applications.
 
-After training, each model’s performance is evaluated using metrics like accuracy, precision, recall, and F1-score.
+Chosen Metric
 
-| Model                    | Accuracy   | Precision  | Recall     | F1-Score   |
-| ------------------------ | ---------- | ---------- | ---------- | ---------- |
-| **Random Forest**        | **0.9953** | **0.9925** | **1.0000** | **0.9962** |
-| Decision Tree Classifier | 0.9930     | 0.9925     | 0.9962     | 0.9944     |
-| Logistic Regression      | 0.8033     | 0.7942     | 0.9228     | 0.8537     |
-| K-Nearest Neighbors      | 0.5597     | 0.6224     | 0.7420     | 0.6770     |
+F1-Score (90.81%) — chosen because it balances precision (avoiding bad loans) and recall (not missing good applicants). This ensures the bank’s decision system is both safe and inclusive.
 
-Best Model : Random Forest (F1 Score- 99.62%)
+Application
 
-## 📉 Sample Outputs
-✅ Data Split Summary
-3.1 Data Split:
---------------------------------------------------
-✓ Training set: 80.0%
-✓ Test set: 20.0%
-✓ Number of features: 10
-✓ Train approval rate: 70.25%
-✓ Test approval rate: 69.85%
+Banks can integrate this model to: Automatically pre-screen applicants Reduce manual workload by 60–70% Make consistent, data-driven loan decisions Improve customer experience through faster processing
 
-✅ Model Training Output
-Logistic Regression trained successfully.
-Decision Tree trained successfully.
-Random Forest trained successfully.
-K-Nearest Neighbors trained successfully.
+Tech Stack
 
-✅ Example Evaluation Output
-Random Forest Accuracy: 84.25%
-Precision: 83.40%
-Recall: 82.10%
-F1-score: 82.75%
-
-## 📈 Visualizations
-
-The notebook may include these plots:
-
-Correlation Heatmap – To identify relationships between numerical features.
-
-Feature Importance Plot – To visualize which attributes most influence predictions.
-
-Confusion Matrix – To analyze correct vs incorrect classifications.
-
-Model Comparison Bar Chart – To display accuracy across all trained models.
-
-## 💡 Insights
-
-Proper data cleaning (especially handling NaN values in the target column) is critical.
-
-Random Forest and Decision Tree models often outperform Logistic Regression in this task.
-
-Balancing classes using stratified sampling improves overall fairness.
-
-Feature scaling helps algorithms like KNN perform better.
-
-## 🧰 Technologies Used
-
-Python
-
-Jupyter Notebook
-
-scikit-learn
-
-pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
-## 🚀 How to Run
-
-Clone the repository:
-
-git clone https://github.com/your-username/Bank_Loan_Approval_System.git
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Open the notebook:
-
-jupyter notebook Bank_Loan_Approval_System.ipynb
-
-
-Run all cells to reproduce the results.
-
-## 📈 Future Enhancements
-
-Add feature importance visualization and SHAP explainability.
-
-Experiment with advanced models like XGBoost, LightGBM, or CatBoost.
-
-Deploy the best-performing model using Streamlit or Flask.
-
-Integrate a user interface for loan officers to input applicant data and get instant predictions.
-
-##🧑‍💻 Author
-
-Debdut Nandy
-📍 CSE (AI & ML), Brainware University
-
-## 🏁 Conclusion
-
-This project demonstrates how machine learning can automate loan approval prediction with high accuracy and transparency.
-It provides a practical understanding of data preprocessing, model training, and evaluation within a real-world financial context.
+Language: Python Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, Environment: Google Colab
