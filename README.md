@@ -42,7 +42,6 @@ F1-Score (99.62%) — chosen because it balances precision (avoiding bad loans) 
 Banks can integrate this model to: Automatically pre-screen applicants Reduce manual workload by 60–70% Make consistent, data-driven loan decisions Improve customer experience through faster processing
 
 ## Tech Stack
-
-## Language: Python
+Language: Python
 Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn 
 Environment: Google Colab
