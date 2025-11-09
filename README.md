@@ -49,8 +49,8 @@ models = {
     'Random Forest': RandomForestClassifier(random_state=42, n_estimators=100),
     'K-Nearest Neighbors': KNeighborsClassifier(n_neighbors=5)
 }
-d
- 📊Evaluation Metrices
+
+ ## 📊Evaluation Metrices
 
 After training, each model’s performance is evaluated using metrics like accuracy, precision, recall, and F1-score.
 
@@ -63,7 +63,7 @@ After training, each model’s performance is evaluated using metrics like accur
 
 Best Model : Random Forest (F1 Score- 99.62%)
 
-📉 Sample Outputs
+## 📉 Sample Outputs
 ✅ Data Split Summary
 3.1 Data Split:
 --------------------------------------------------
@@ -85,7 +85,7 @@ Precision: 83.40%
 Recall: 82.10%
 F1-score: 82.75%
 
-📈 Visualizations
+## 📈 Visualizations
 
 The notebook may include these plots:
 
@@ -97,7 +97,7 @@ Confusion Matrix – To analyze correct vs incorrect classifications.
 
 Model Comparison Bar Chart – To display accuracy across all trained models.
 
-💡 Insights
+## 💡 Insights
 
 Proper data cleaning (especially handling NaN values in the target column) is critical.
 
@@ -107,7 +107,7 @@ Balancing classes using stratified sampling improves overall fairness.
 
 Feature scaling helps algorithms like KNN perform better.
 
-🧰 Technologies Used
+## 🧰 Technologies Used
 
 Python
 
@@ -121,7 +121,7 @@ NumPy
 
 Matplotlib / Seaborn
 
-🚀 How to Run
+## 🚀 How to Run
 
 Clone the repository:
 
@@ -140,7 +140,7 @@ jupyter notebook Bank_Loan_Approval_System.ipynb
 
 Run all cells to reproduce the results.
 
- 📈 Future Enhancements
+## 📈 Future Enhancements
 
 Add feature importance visualization and SHAP explainability.
 
@@ -150,12 +150,12 @@ Deploy the best-performing model using Streamlit or Flask.
 
 Integrate a user interface for loan officers to input applicant data and get instant predictions.
 
-🧑‍💻 Author
+##🧑‍💻 Author
 
 Debdut Nandy
 📍 CSE (AI & ML), Brainware University
 
-🏁 Conclusion
+## 🏁 Conclusion
 
 This project demonstrates how machine learning can automate loan approval prediction with high accuracy and transparency.
 It provides a practical understanding of data preprocessing, model training, and evaluation within a real-world financial context.
