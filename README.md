@@ -14,9 +14,12 @@ Why: Offers transparency, high recall, and interpretability—ideal for financia
 ## Performance
 
  ✓ F1-Score: 99.62% (balanced performance)
-  ✓ Accuracy: 99.53% (overall correctness)
-  ✓ Precision: 99.25% (low false approvals)
-  ✓ Recall: 100.00% (captures most good applicants)
+  
+ ✓ Accuracy: 99.53% (overall correctness)
+ 
+ ✓ Precision: 99.25% (low false approvals)
+  
+ ✓ Recall: 100.00% (captures most good applicants)
 
 
 ## Exploratory Data Analysis (EDA): 
