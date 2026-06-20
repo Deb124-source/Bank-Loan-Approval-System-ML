@@ -13,7 +13,7 @@ layout="wide"
 
 try:
     model = joblib.load(
-        "models/loan_default_model.pkl"
+        "models/loan_default_model (1).pkl"
     )
 
 except Exception as e:
