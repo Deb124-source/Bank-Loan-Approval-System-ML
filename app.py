@@ -11,14 +11,13 @@ layout="wide"
 
 )
 
+try:
+    model = joblib.load(
+        "models/loan_default_model.pkl"
+    )
 
-
-model = joblib.load(
-
-"models/loan_default_model.pkl"
-
-)
-
+except Exception as e:
+    st.error(e)
 
 
 st.markdown(
